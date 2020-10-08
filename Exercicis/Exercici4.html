@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex4</title>
+<script>
+
+</script>
+</head>
+<body>
+	<script>
+		var aCuadrat,val1, val2, val3, val4, sum, producte, factura, baseTriangle, alturaTriangle, aTriangle;
+
+		val1 = prompt ("Per favor, posa un costat del cuadrat :  " , "");
+		aCuadrat = parseInt(val1) * parseInt(val1);
+		document.write("La area del cuadrat es : ");
+		document.write(aCuadrat);
+		document.write("<br>");
+
+		val1 = prompt("Per favor, afageix el primer numero :  " , "");
+		val2 = prompt("Per favor, afageix el segon numero :  " , "");
+		val3 = prompt("Per favor, afageix el tercer numero :  " , "");
+		val4 = prompt("Per favor, afageix el cuart numero :  " , "");
+
+		sum =  parseInt(val1) + parseInt(val2) + parseInt(val3) + parseInt(val4);
+		document.write ("La suma dels 4 valors afegits es : ");
+		document.write(sum);
+		document.write("<br>");
+		producte = parseInt(val1) * parseInt(val2) * parseInt(val3) * parseInt(val4);
+		document.write("El producte dels 4 valors afegits es : ");
+		document.write(producte);
+		document.write("<br>");
+
+		val1 = prompt("Per favor, afageix el valor d'un producte :  " , "");
+		val2 = prompt("Per favor, afageix el valor d'un altre producte :  " , "");
+		factura = parseInt(val1) + parseInt(val2);
+		document.write("El valor dels productes afegits es : ");
+		document.write(factura);
+		document.write("<br>");
+
+		alturaTriangle = prompt("Per favor, afageix la altura del triangle:  " , "");
+		baseTriangle = prompt("Per favor, afageix la base del triangle :  " , "");
+		aTriangle = (parseInt(alturaTriangle) * parseInt(baseTriangle))/2;
+		document.write("La area del triangle es : ");
+		document.write(aTriangle);
+		document.write("<br>");
+	</script>
+
+</body>
+</html> 
