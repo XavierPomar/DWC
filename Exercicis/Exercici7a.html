@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<script>
+ 		var nota1, nota2, nota3;
+
+ 		nota1 = prompt("Afageix una nota : ", "");
+ 		nota2 = prompt("Afageix una altre nota : ", "");
+ 		nota3 = prompt("Afageix una altre nota : ", "");
+
+ 		nota1 = parseInt(nota1);
+ 		nota2 = parseInt(nota2);
+ 		nota3 = parseInt(nota3);
+
+ 		if(nota1 > nota2 && nota1 > nota3){
+ 			document.write("The highest mark is : " + nota1);
+ 		}
+ 		else if(nota1 < nota2 && nota2 > nota3){
+ 			document.write("The highest mark is : " + nota2);
+ 		}
+ 		else{
+ 			document.write("The highest mark is : " + nota3);
+ 		}
+
+	</script>
+
+</body>
+</html> 
