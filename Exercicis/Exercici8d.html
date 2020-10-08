@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<script>
+ 		var sal, year, nsal;
+
+ 		sal = prompt("Posa el salari del treballador : ", "");
+ 		sal = parseInt(sal);
+ 		year= prompt("Posa els anys que el treballador du fent feina a la empresa : ","");
+ 		year = parseInt(year);
+
+ 		
+
+ 		if(sal < 500 && year >= 10){
+ 			nsal = sal*1.2;
+ 			document.write("El nou salari es : " + nsal);
+ 		}
+ 		else if(sal < 500 && year < 10){
+ 			nsal = sal*1.05;
+ 			document.write("El nou salari es : " + nsal);
+ 		}
+ 		else if(sal >= 500){
+ 			document.write("El salari del treballador no puja.");
+ 		}
+
+	</script>
+
+</body>
+</html> 
