@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+		<script>
+		var  num, sum = 0, x = 0 ;
+
+		do{
+			num=prompt('Enter a number :','');
+			num=parseInt(num);
+
+			sum = sum + num;
+		}
+		while(num != 9999);
+		
+		if(sum == 0){
+			document.write("ZERO");
+			document.write('<br>');
+		}else if(sum < 0){
+			document.write("NEGATIVE");
+			document.write('<br>');
+		}else{
+			document.write("POSITIVE");
+			document.write('<br>');	
+		}
+ 	</script>
+
+</body>
+</html> 
