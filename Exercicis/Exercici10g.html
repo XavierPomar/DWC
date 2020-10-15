@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+		<script>
+		var x = 0, mr= 0 , ls = 0, salary;
+		while(x < 5){
+			salary=prompt('Enter a salary:','');
+			salary=parseInt(salary);
+
+			if(salary > 1000){
+				mr++;
+			}else{
+				ls++;
+			}
+			x++;
+		}
+
+	document.write("Workers that get more than 1000 : " + mr);
+ 	document.write('<br>');
+ 	document.write("Workers that not get more than 1000 : " + ls);
+ 	</script>
+
+</body>
+</html> 
