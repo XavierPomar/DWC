@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+		<script>
+
+			function minimum(x1, x2, x3){
+				var min;
+				if(x1 < x2 && x1 < x3){
+					min = x1;
+				}else if(x2 < x3){
+					min = x2;
+				}else{
+					min = x3;
+				}
+				document.write("The minimum is : " + min);
+			}
+
+			var n1, n2, n3;
+
+			n1=prompt("Put the first number : ", "");
+			n1=parseInt(n1);
+			n2=prompt("Put the second number : ", "");
+			n2=parseInt(n2);
+			n3=prompt("Put the third number : ", "");
+			n3=parseInt(n3);
+
+
+			minimum(n1, n2, n3);
+
+
+
+ 	</script>
+
+</body>
+</html> 
