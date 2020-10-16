@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+		<script>
+
+		var num,numt = 0, p = 0, n = 0, o = 0, sum = 0, pair = 0;
+		do{
+			if(numt != 10){
+				numt++;
+				num=prompt("Put a number: ", "");
+				num=parseInt(num);
+
+				if(num % 2 == 1){
+					o++;
+				}
+				if(num >= 0){
+					p++;
+				}else{
+					n++;
+				}
+
+				pair = (num % 2 == 0);
+
+				sum = sum + pair;
+			}
+
+		}
+		
+		while(numt != 10);
+
+		document.write("There are " + p + " positive numbers.");
+		document.write('<br>');
+		document.write("There are " + n + " negative numbers.");
+		document.write('<br>');
+		document.write("There are " + o + " odd numbers.");
+		document.write('<br>');
+		document.write("The sum of the pair numbers is : " + sum);
+
+ 	</script>
+
+</body>
+</html> 
