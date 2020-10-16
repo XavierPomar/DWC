@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+		<script>
+		var  id, idcount = 0, age, sex, m = 0, f = 0 , am = 0;
+
+		do{
+			
+			id=prompt('Enter an id :','');
+			id=parseInt(id);
+
+			if (id !=0){
+				idcount++;
+				age=prompt('Enter an age :','');
+				age=parseInt(age);
+				sex=prompt('Enter a sex (m / f) :','');
+
+				if(sex == "m" ){
+					m++;
+				}else{
+					f++;
+				}
+
+				if( age >= 18 && age <= 65 && sex == "m"){
+				am++;
+				}
+			}
+
+			
+			
+			
+		}
+		while(id != 0);
+		
+		document.write("There are : " + idcount);
+		document.write('<br>');
+		
+		document.write("There are : " + m + " male");
+		document.write('<br>');
+		document.write("There are : " + f + " female");
+		document.write('<br>');
+
+		document.write("There are : " + am + " mens between 18 and 65 years old ");
+
+ 	</script>
+
+</body>
+</html> 
