@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+		<script>
+		var  account, name, money, suma = 0;
+
+		do{
+			
+			account=prompt('Enter an account :','');
+			account=parseInt(account);
+
+			if (account !=0){
+				name=prompt('Enter the name :','');
+
+				money=prompt('Enter the amount:','');
+				money=parseInt(money);
+
+				suma = suma + money;
+
+				document.write("Mr/Mrs. is the owner of " + account + " account, and there are " + money + "  € ");
+			}
+			
+		}
+
+		while(account != 0);
+ 	</script>
+
+</body>
+</html> 
