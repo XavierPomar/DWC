@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+		<script>
+
+		var mark, sum = 0, ava = 0, avb = 0; avc = 0, a, b, c, mav ;
+		
+		for(a = 0 ; a <= 5 ; a++ ){
+			mark=prompt("Put the mark of the students of class A : ", "");
+			mark=parseInt(mark);
+
+			sum = sum + mark;
+
+			ava = sum / 5;
+		}
+
+		for(b = 0 ; b <= 6 ; b++ ){
+			mark=prompt("Put the mark of the students of class B: ", "");
+			mark=parseInt(mark);
+
+			sum = sum + mark;
+
+			avb = sum / 6;
+		}
+
+		for(c = 0 ; c <= 11 ; c++ ){
+			mark=prompt("Put the mark of the students of class C : ", "");
+			mark=parseInt(mark);
+
+			sum = sum + mark;
+
+			avc = sum / 5;
+		}
+
+		if(ava > avb && ava > avc){
+			mav = "Class A";
+		}else if(avb > avc){
+			mav = "Class B";
+		}else{
+			mav = "Class C";
+		}
+
+		document.write("The average of Class A is : " + ava);
+		document.write('<br>');
+		document.write("The average of Class B is : " + avb);
+		document.write('<br>');
+		document.write("The average of Class C is : " + avc);
+		document.write('<br>');
+		document.write("The Class with the highest average is : " + mav);
+
+ 	</script>
+
+</body>
+</html> 
