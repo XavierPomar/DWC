@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+		<script>
+
+		var s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, eq = 0, is = 0, sc = 0;
+			s1=prompt("Put the first side of the first Triangle: ", "");
+			s1=parseInt(s1);
+			s2=prompt("Put the second side of the first Triangle: ", "");
+			s2=parseInt(s2);
+			s3=prompt("Put the third side of the first Triangle: ", "");
+			s3=parseInt(s3);
+			s4=prompt("Put the fourth side of the second Triangle: ", "");
+			s4=parseInt(s4);
+			s5=prompt("Put the fifth side of the second Triangle: ", "");
+			s5=parseInt(s5);
+			s6=prompt("Put the sixth side of the second Triangle: ", "");
+			s6=parseInt(s6);
+			s7=prompt("Put the seventh side of the third Triangle: ", "");
+			s7=parseInt(s7);
+			s8=prompt("Put the eighth side of the third Triangle: ", "");
+			s8=parseInt(s8);
+			s9=prompt("Put the ninth side of the third Triangle: ", "");
+			s9=parseInt(s9);
+			s10=prompt("Put the tenth side of the fourth Triangle: ", "");
+			s10=parseInt(s10);
+			s11=prompt("Put the eleventh side of the fourth Triangle: ", "");
+			s11=parseInt(s11);
+			s12=prompt("Put the twelfth side of the fourth Triangle: ", "");
+			s12=parseInt(s12);
+
+
+			if(s1 == s2 && s1 == s3 && s2 == s3){
+				eq++;
+				document.write(" First Triangle equilateral. ");
+			}else if(s1 !== s2 && s1 !== s3 && s2 !== s3){
+				sc++;
+				document.write(" First Triangle scalene. ");
+			}else{
+				is++;
+				document.write(" First Triangle isosceles .");
+			}
+			document.write('<br>');
+
+			if(s4 == s5 && s4 == s6 && s5 == s6){
+				eq++;
+				document.write("Second Triangle equilateral. ");
+			}else if(s4 !== s5 && s4 !== s6 && s5 !== s6){
+				sc++;
+				document.write("Second Triangle scalene. ");
+			}else{
+				is++;
+				document.write("Second Triangle isosceles .");
+			}
+			document.write('<br>');
+
+			if(s7 == s8 && s7 == s9 && s8 == s9){
+				eq++;
+				document.write("Third Triangle equilateral. ");
+			}else if(s7 !== s8 && s7 !== s9 && s8 !== s9){
+				sc++;
+				document.write("Third Triangle scalene. ");
+			}else{
+				is++;
+				document.write("Third Triangle isosceles .");
+			}
+			document.write('<br>');
+
+			if(s10 == s11 && s10 == s12 && s11 == s12){
+				eq++;
+				document.write("Fourth Triangle equilateral. ");
+			}else if(s10 !== s11 && s10 !== s12 && s11 !== s12){
+				sc++;
+				document.write("Fourth Triangle scalene. ");
+			}else{
+				is++;
+				document.write("Fourth Triangle isosceles .");
+			}
+			document.write('<br>');
+
+			document.write("There are " + eq + " Triangles equilaterals.");
+			document.write('<br>');
+			document.write("There are " + is + " Triangles isosceles.");
+			document.write('<br>');
+			document.write("There are " + sc + " Triangles scalenes.");
+			document.write('<br>');
+
+			if(eq > is && eq > sc){
+				document.write("There are more equilaterals triangles than the others.");
+				document.write('<br>');
+			}else if(is > sc){
+				document.write("There are more isosceles triangles than the others.");
+				document.write('<br>');
+			}else{
+				document.write("There are more scalenes triangles than the others.");
+			}
+
+ 	</script>
+
+</body>
+</html> 
