@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+	function checkcount(){
+		var cant=0;
+ 		if (document.getElementById('checkbox1').checked) {
+ 			cant++
+ 		} 
+ 		if (document.getElementById('checkbox2').checked) {
+ 			cant++
+ 		} 
+ 		if (document.getElementById('checkbox3').checked) {
+ 			cant++
+ 		} 
+
+ 		if(cant == 1){
+ 			alert("You have choosen 1 checkbox. ");
+ 		}else if(cant == 2){
+ 			alert("You have choosen 2 checkbox. ");
+ 		}else{
+ 			alert("You have choosen 3 checkbox. ");
+ 		}
+	}
+
+</script>
+</head>
+<body>
+
+<input type="checkbox" id="checkbox1"> Football
+<input type="checkbox" id="checkbox2"> Tennis
+<input type="checkbox" id="checkbox3"> Karate <br>
+
+<button onclick="checkcount()">Send</button></br>
+
+
+<script>
+
+	
+
+</script>
+
+</body>
+</html>
