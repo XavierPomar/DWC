@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+
+</script>
+</head>
+<body>
+	<script>
+		function sumArray(numbers) {
+
+			var f, x = 0;
+			for(f = 0 ; f <= num.length ; f++) {
+				
+				x = x + f;
+			}
+			document.write("The sum of all numbers is : " + x);
+			document.write('<br>');
+		}
+
+		function averageArray(numbers) {
+
+			var f, x = 0, av = 0;
+			for(f = 0 ; f <= num.length ; f++) {
+				
+				x = x + f;
+				av = x / 8;
+			}
+			document.write("The avergae of all numbers is : " + av);
+			document.write('<br>');
+		}
+
+		function sumhigher5(numbers) {
+
+			var f, x = 0;
+			for(f = 0 ; f <= num.length ; f++) {
+				if(f >= 5 ){
+					x = x + f;
+				}
+			}
+			document.write("The sum of the numbers higher than 5 is : " + x);
+			document.write('<br>');
+		}
+
+		function numbershigher5(numbers) {
+
+			var f, x = 0;
+			for(f = 0 ; f <= num.length ; f++) {
+				if(f >= 5 ){
+					x++;
+				}
+			}
+			document.write("The total of the numbers higher than 5 is : " + x);
+		}
+
+		var num = new Array();
+
+		num = [4, 5, 1, 2, 3, 7, 8, 6];
+
+		sumArray(num);
+		averageArray(num);
+		sumhigher5(num);
+		numbershigher5(num);
+
+
+</script>
+
+</body>
+</html>
