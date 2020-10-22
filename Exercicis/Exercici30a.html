@@ -1,0 +1,27 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<script>
+
+ 
+ 			function rand() { 
+ 				var rd = (Math.floor(Math.random()*3));
+ 				rd = parseInt(rd);
+
+ 				if( rd == 0 ){
+ 					rd = open("https://www.google.es/", "", "status = yes, width = 600, height = 300, menubar = yes"); 
+ 				}else if(rd == 1){
+ 					rd = open("https://www.yahoo.com/", "", "status = yes, width = 600, height = 300, menubar = yes");
+ 				}else{
+ 					rd = open("https://www.bing.com/?setlang=es", "", "status = yes, width = 600, height = 300, menubar = yes");
+ 				}
+ 			}
+
+		</script>
+
+ 		<input type="button" value="Random Window" onClick="rand()" >
+ 		
+	</body>
+</html>
