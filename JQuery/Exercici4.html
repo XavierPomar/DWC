@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Template</title>
+<script src="../jquery-3.5.1.js"></script>
+</head>
+<body>
+
+	<p>HOLA JQUERY</p>
+	<table border = "1" id="tabla1">
+		<tr id="trPrimer">
+			<td>
+				Audi
+			</td>
+		</tr>
+		<tr id="trSegon">
+			<td>
+				BMW
+			</td>
+		</tr>
+
+	</table>
+
+	<table border = "1" id="tabla2">
+		<tr id="trTercer">
+			<td>
+				Audi
+			</td>
+		</tr>
+		<tr id="trQuart">
+			<td>
+				BMW
+			</td>
+		</tr>
+
+	</table>
+
+<script>
+		$(document).ready(function(){
+			$("#tabla1").click(tablan1);
+		});
+
+		$(document).ready(function(){
+			$("#tabla2").click(tablan2);
+		});
+
+		function tablan1(){
+			var x, y; 
+			x = $("#trPrimer");
+			x.css("background-color","red");;
+			y = $("#trSegon");
+			y.css("background-color","red");;
+		}
+
+		function tablan2(){
+			var x, y; 
+			x = $("#trTercer");
+			x.css("font-size","40px");;
+			y = $("#trQuart");
+			y.css("font-size","40px");;
+		}
+
+	</script>
+	
+
+</body>
+</html> 
