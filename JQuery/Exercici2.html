@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Template</title>
+<script src="../jquery-3.5.1.js"></script>
+</head>
+<body>
+
+	<p>HOLA JQUERY</p>
+	<table border = "1">
+		<tr id="trPrimer">
+			<td>
+				Audi
+			</td>
+		</tr>
+		<tr id="trSegon">
+			<td>
+				BMW
+			</td>
+		</tr>
+
+	</table>
+<script>
+		$(document).ready(function(){
+			$("#trPrimer").click(tr1);
+		});
+
+		$(document).ready(function(){
+			$("#trSegon").click(tr2);
+		});
+
+		function tr1(){
+			var x; 
+			x = $("#trPrimer");
+			x.css("background-color","red");;
+		}
+
+		function tr2(){
+			var x; 
+			x = $("#trSegon");
+			x.css("background-color","yellow");;
+		}
+
+	</script>
+	
+
+</body>
+</html> 
