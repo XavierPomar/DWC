@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Template</title>
+<script src="../jquery-3.5.1.js"></script>
+</head>
+<body>
+
+<table class="taula"   border="1">
+  <tr >
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+</table>
+<br>
+
+<table id="t2" border="1">
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+
+  <tr>
+    <td>OFF</td>
+    <td>OFF</td>
+    <td>OFF</td>
+  </tr>
+</table>
+
+<br>
+
+	<button id="b1">Press me</button>
+	
+
+<script>
+
+	$(document).ready(function(){
+
+		$("#b1").click(function(){
+			$("td").text("ON"); 
+		});
+	});
+
+</script>
+	
+
+</body>
+</html> 
