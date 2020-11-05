@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Template</title>
+<script src="../jquery-3.5.1.js"></script>
+</head>
+<body>
+
+	<h1>EXERCICI 5 </h1>
+	<p>HOLA JQUERY</p>
+
+	<button id="b1">10PX</button>
+	<button id="b2">15PX</button>
+	<button id="b3">20PX</button>
+	
+
+<script>
+		$(document).ready(function(){
+			$("b1").click(function(){
+				$("h1,p").css("font-size","10px");
+			});
+		});
+
+		$(document).ready(function(){
+			$("b2").click(function(){
+				$("h1,p").css("font-size","15px");
+			});
+		});
+
+		$(document).ready(function(){
+			$("b3").click(function(){
+				$("h1,p").css("font-size","20px");
+			});
+		});
+
+
+
+	</script>
+	
+
+</body>
+</html> 
