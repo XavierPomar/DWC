@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head id="test">
+	<title>JQuery Template</title>
+<script src="../jquery-3.5.1.js"></script>
+</head>
+<body id="test1">
+
+<h1>Hola, que tal?</h1>
+<p>Va tot be, i tu?</p>
+
+	<button id="b1">HeadElements</button>
+  <button id="b2">BodyElements</button>
+	
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#b2").click(function(){
+    alert("HTML: " + $("#test1").html());
+  });
+});
+</script>
+ 	
+</body>
+</html> 
