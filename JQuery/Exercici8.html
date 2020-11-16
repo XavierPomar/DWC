@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JQuery Template</title>
+<script src="../jquery-3.5.1.js"></script>
+</head>
+<body>
+
+<table class="taula"   border="1">
+  <thead class="style1" id="the">
+  <tr >
+    <th>Nom</th>
+    <th>Llinatge</th>
+  </tr>
+  </thead>
+  <tbody style="background-color: lightgreen" id="tbo">
+    <tr>
+      <td>Xavier</td>
+      <td>Pomar</td>
+    </tr>
+    <tr>
+      <td>Joan</td>
+      <td>Galmes</td>
+    </tr>
+  </tbody>
+</table>
+
+  <button id="b1">Vincular</button>
+  <button id="b2">Desvincular</button>
+  
+<script>
+$(document).ready(function(){
+
+    $("#b1").click(function(){
+      $("#the").toggleClass("style2");
+    });
+  });
+</script>
+
+
+
+<style>
+ 
+.style1 { 
+background-color:#ffffcc; 
+font-family:verdana; 
+font-size:14px; 
+border-top-width:1px; 
+border-right-width:3px; 
+border-bottom-width:3px; 
+border-left-width:1px; 
+border-top-style:dotted; 
+border-right-style:solid; 
+ border-bottom-style:solid; 
+border-left-style:dotted; 
+border-top-color:#ffaa00; 
+border-right-color:#ff0000; 
+ border-bottom-color:#ff0000; 
+border-left-color:#ffaa00; 
+} 
+
+style2{
+  background-color: skyblue;
+}
+</style>
+  
+</body>
+</html> 
