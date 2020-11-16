@@ -1,0 +1,25 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    $("#div1").load("text1.txt");
+  });
+
+  $("#b2").click(function(){
+    $("#div1").load("text2.txt");
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Tria el botó que vols que ens mostri text.</h2></div>
+<button id="b1">Texte 1</button>
+<button id="b2">Texte 2</button>
+
+</body>
+</html>
