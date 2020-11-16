@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+ $(document).ready(function(initEvents){
+  $(document).mousemove(){
+    $("#corx").text("coordinate x="+event.clientX);
+    $("#cory").text("coordinate y="+event.clientY);
+  };
+ };
+
+</script>
+</head>
+<body>
+  <div style="width: 200px; height: 200px;">
+<p id="corx">coordinate x=</p>
+<p id="cory">coordinate y=</p>
+</div>
+</body>
+</html>
