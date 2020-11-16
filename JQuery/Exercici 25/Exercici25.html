@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+	Enter a Number : <input type="text" id="num1"/>
+	Enter an other Number: <input type="text" id="num2"/><br/>
+	<button id="b1"> + </button>
+	<button id="b2"> - </button>
+	<button id="b3"> * </button>
+	<button id="b4"> / </button>
+	<hr/>
+	<div id="resultat">
+	</div>
+
+	<script>
+	$(document).ready(function(){
+
+	  $("#b1").click(function(){
+	    
+	    var v = $("#num1").val();
+	    var x = $("#num2").val();
+
+	    $.getJSON("page1.php", 
+	    		  {num1: v, num2: x, op:"sum"}, printResultat);
+  	  });
+
+  	  $("#b2").click(function(){
+	    
+	    var v = $("#num1").val();
+	    var x = $("#num2").val();
+
+	    $.getJSON("page1.php", 
+	    		  {num1: v, num2: x, op:"res"}, printResultat);
+  	  });
+
+  	  $("#b3").click(function(){
+	    
+	    var v = $("#num1").val();
+	    var x = $("#num2").val();
+
+	    $.getJSON("page1.php", 
+	    		  {num1: v, num2: x, op:"mult"}, printResultat);
+  	  });
+
+  	  $("#b4").click(function(){
+	    
+	    var v = $("#num1").val();
+	    var x = $("#num2").val();
+
+	    $.getJSON("page1.php", 
+	    		  {num1: v, num2: x, op:"divi"}, printResultat);
+  	  });
+
+	  function printResultat(data){
+	  	console.log( "JSON Data: " + data );
+    			$("#resultat").html("RESULTAT: "+data);
+	  }
+
+	});
+	</script>
+</body>
+</html>
