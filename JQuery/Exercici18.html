@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+        <script src="../jquery-3.5.1.js"></script>
+        <script>
+
+        </script>
+    </head>
+    <body>
+		<div id="div1">
+
+        </div> </p>
+        <div>
+            <button id="b1">ADD</button>
+            <button id="b2">DELETE</button>
+        </div>
+        <script>
+            $(document).ready(function(){
+
+                var count=0;
+
+                $("#b1").click(function(){
+
+                    var numDiv = $("<div/>", {id : 'div_'+count});
+
+                    var numInput = $("<input/>", {type : 'text',
+                        id : 'div_'+count,
+                        value : count
+                    });
+
+                    var r = $("<button/>", { id : "b_"+count,
+                        text: "Delete " +count,
+                        click:function(){
+                            $(this).parent().remove();
+                        }
+                    });
+
+                    var br = $("</br>");
+
+                    numDiv.append(numInput);
+                    numDiv.append(r);
+                    numDiv.append(br);
+
+                    $("#div1").append(numDiv);
+
+                    count++;
+                });
+
+                $("#b2").click(function(){
+                    $("#div1").empty();
+
+                    count = 0;
+                });
+
+
+            });
+        </script>
+    </body>
+</html>
