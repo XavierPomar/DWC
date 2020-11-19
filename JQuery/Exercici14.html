@@ -1,18 +1,27 @@
 <html>
 <head>
+	<script src="../jquery-3.5.1.js"></script>
 
 </head>
 <body>
- <h1 id="1">Hola a tots</h1>
- <button id="b1">SkyBlue</button>
- <button id="b2">LightGreen</button>
+ <button id="b1">B1</button>
+        <button id="b2">B2</button>
 
 <script>
 
-  $(document).ready(function(){
-      $("#b1").click(function(){
-        $("#1").css("color","#FFF000");
-      });
+    $(document).ready(function(){
+        $("#b1").mouseup(function(){
+            $(this).css({"background-color":"#ffffff"});
+    });
+        $("#b1").mousedown(function(){
+            $(this).css({"background-color":"lightgrey"});
+        });
+        $("#b2").mouseup(function(){
+            $(this).css({"background-color":"#ffffff"});
+        });
+        $("#b2").mousedown(function(){
+            $(this).css({"background-color":"salmon"});
+        });
     });
  
 
