@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+        <script src="../jquery-3.5.1.js"></script>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div id="div1" >
+            <p id="p1">ADEU</p>
+            <p id="p2">VAGUI BE</p>
+        </div>
+        <div id="div2" style="display: none;">
+            <p id="p1">HOLA</p>
+            <p id="p2">COM VA</p>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#div1").click(function(){
+                    $(this).fadeOut(function(){
+                        $("#div2").fadeIn();
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
