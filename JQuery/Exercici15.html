@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+        <script src="../jquery-3.5.1.js"></script>
+        <script>
+
+        </script>
+        <style>
+            div{
+                width: 800px;
+                height: 70px;
+                background-color: darksalmon;
+                
+            }
+            .div1{
+                width: 250px;
+                height: 250px;
+                background-color: darksalmon;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <script>
+            $(document).ready(function(){
+                $("div").dblclick(function(){
+                    $(this).toggleClass("div1");
+                });
+            });
+        </script>
+    </body>
+</html>
