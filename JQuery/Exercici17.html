@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+        <script src="../jquery-3.5.1.js"></script>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="" value="">
+        </form>
+        <script>
+            $(document).ready(function(){
+                $("input").blur(InEmpt);
+            });
+
+            function InEmpt(){
+                if($(this).val() == ""){
+                    alert("El camp del formulari, no pot estar buit.");
+                }
+            };
+        </script>
+    </body>
+</html>
