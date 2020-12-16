@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>ESTILS</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+
+        </script>
+        <style>
+            .cursive {
+                font-family: cursive;
+            }
+            .fantasy {
+                font-family: fantasy;
+            }
+            .arial {
+                font-family: arial;
+            }
+            .rosa {
+                color:pink;
+            }
+            .groc {
+                color:yellow;
+            }
+            .gris {
+                color:grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+                        <h1>EDITAR ESTILS</h1>
+                            POSA EL TEXTE PER EDITAR: 
+                            <input class="form-control" type="text"  id="text"/>
+                            FONT:
+                            <select class="form-control col-md-6" id="seleccionarFont">
+                                <option>-- SELECCIONA --</option>
+                                <option value="cursive">Cursive</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="arial">Arial</option>
+                            </select>
+                            COLOR:
+                            <select class="form-control col-md-6" id="seleccionarColor">
+                                <option>-- SELECCIONA --</option>
+                                <option value="rosa">Rosa</option>
+                                <option value="groc">Groc</option>
+                                <option value="gris">Gris</option>
+                            </select> 
+                            TAMANY:
+                            <input class="form-control col-md-6" type="text" value="15" id="tamanytext" size="4"/>
+                            <br>
+                            <button class="btn btn-primary form-control col-md-6" id="b1">APLICAR ESTILS</button>
+                            <button class="btn btn-dark form-control col-md-5" id="b2">REINICIAR ESTILS</button>
+                        </fieldset>
+          
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <p id="prova">
+
+                    </p>
+                </div>
+            </div>
+
+    </div>
+        <script>
+            $(document).ready(function(){
+
+                function aplicarestil(){
+                    var txt = $("#text").val();
+                    $("#prova").text(txt);
+
+                    var font = $("#seleccionarFont").val();
+                    switch(font){
+                        case "cursive":
+                            $("#prova").addClass("cursive");
+                            break;
+                        case "fantasy":
+                            $("#prova").addClass("fantasy");
+                            break;
+                        case "arial":
+                            $("#prova").addClass("arial");
+                            break;
+                    }
+
+                    var color = $("#seleccionarColor").val();
+                    switch(color){
+                        case "rosa":
+                            $("#prova").addClass("rosa");
+                            break;
+                        case "groc":
+                            $("#prova").addClass("groc");
+                            break;
+                        case "gris":
+                            $("#prova").addClass("gris");
+                            break;
+                    }
+
+                    var size= $("#tamanytext").val()+"px";
+			        $("#prova").css("fontSize", size);
+                }
+
+                function eliminarEstils(){
+                    $("#prova").removeClass("cursive");
+                    $("#prova").removeClass("fantasy");
+                    $("#prova").removeClass("arial");
+                    $("#prova").removeClass("rosa");
+                    $("#prova").removeClass("groc");
+                    $("#prova").removeClass("gris");
+                    $("#prova").css("fontSize", "10px");
+                }
+
+                $("#b1").click(function(){
+                    eliminarEstils();
+                    aplicarestil();
+                });
+
+                $("#b2").click(function(){
+                    eliminarEstils();
+                    var txt = $("#text").val();
+                    $("#prova").text(txt);
+                });
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
