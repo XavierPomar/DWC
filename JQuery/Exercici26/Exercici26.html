@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ACT 26 JQuery</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+<h3>Tria una ciutat:</h3>
+
+<select id="city">
+    <option value="pm">Palma</option>
+    <option value="ma">Manacor</option>
+    <option value="in">Inca</option>
+    <option value="so">Soller</option>
+</select>
+<button id="b1" class="btn btn-primary">FILTRA</button>
+
+<div id="mostrar">
+
+</div>
+<script>
+$(document).ready(function(){
+
+$("#b1").click(function(){
+
+var v = $("#city").val();
+
+$.getJSON("Exercici26.php", {p: v}, mostrarInfo);
+
+
+});
+
+function mostrarInfo(data){
+
+        $("#mostrar").html(data);
+}
+
+});
+</script>
+
+</body>
+</html>
